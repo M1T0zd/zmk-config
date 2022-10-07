@@ -38,11 +38,6 @@
             bindings = <&kp ENTER>;
             key-positions = <28 27>;
         };
-
-        hold_layer {
-            bindings = <&mo 3>;
-            key-positions = <30 33>;
-        };
     };
 
     keymap {
