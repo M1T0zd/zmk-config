@@ -89,7 +89,7 @@
  &kp F1   &kp F2   &kp F3   &kp F4  &trans     &kp SCROLLLOCK  &kp HOME    &kp UP    &kp END    &kp PAGE_UP
  &kp F5   &kp F6   &kp F7   &kp F8  &trans    &kp K_SCROLL_UP  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &kp K_SCROLL_DOWN  &kp LEFT  &kp DOWN     &kp UP      &kp RIGHT
-                             &to 3   &to 2             &trans    &trans
+                             &to 3   &to 5             &trans    &trans
             >;
         };
 
