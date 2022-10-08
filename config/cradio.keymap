@@ -22,7 +22,9 @@
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+            bindings =
+                <&kp>,
+                <&kp>;
         };
     };
 
@@ -93,10 +95,10 @@
 
         function_nav {
             bindings = <
- &kp F1   &kp F2   &kp F3   &kp F4  &trans     &kp SCROLLLOCK  &kp HOME    &kp UP    &kp END    &kp PAGE_UP
- &kp F5   &kp F6   &kp F7   &kp F8  &trans    &kp K_SCROLL_UP  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
- &kp F9  &kp F10  &kp F11  &kp F12  &trans  &kp K_SCROLL_DOWN  &kp LEFT  &kp DOWN     &kp UP      &kp RIGHT
-                             &to 3   &to 5             &trans    &trans
+           &kp F1           &kp F2               &kp F3             &kp F4  &trans     &kp SCROLLLOCK              &kp HOME                  &kp UP              &kp END               &kp PAGE_UP
+ &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LEFT_CONTROL F7  &hm LEFT_SHIFT F8  &trans    &kp K_SCROLL_UP  &hm RIGHT_SHIFT LEFT  &hm RIGHT_CONTROL DOWN  &hm RIGHT_ALT RIGHT  &hm RIGHT_META PAGE_DOWN
+           &kp F9          &kp F10              &kp F11            &kp F12  &trans  &kp K_SCROLL_DOWN              &kp LEFT                &kp DOWN               &kp UP                 &kp RIGHT
+                                                                     &to 3   &to 5             &trans                &trans
             >;
         };
 
