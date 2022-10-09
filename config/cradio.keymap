@@ -68,10 +68,10 @@
 
         numbers {
             bindings = <
- &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-       &trans        &trans        &trans        &trans         &trans     &kp MINUS      &kp PLUS     &kp SLASH  &kp ASTERISK     &kp EQUAL
-       &trans        &trans        &trans        &trans         &trans        &trans        &trans        &trans        &trans        &trans
-                                                  &to 2  &kp BACKSPACE     &kp SPACE         &to 0
+  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3    &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6          &kp NUMBER_7             &kp NUMBER_8            &kp NUMBER_9          &kp NUMBER_0
+ &kp LEFT_META  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT          &none     &kp MINUS  &hm RIGHT_SHIFT PLUS  &hm RIGHT_CONTROL SLASH  &hm RIGHT_ALT ASTERISK  &hm RIGHT_META EQUAL
+         &none         &none             &none           &none          &none         &none                 &none                    &none                   &none                 &none
+                                                         &to 2  &kp BACKSPACE     &kp SPACE                 &to 0
             >;
         };
 
@@ -86,18 +86,18 @@
 
         system {
             bindings = <
-       &reset   &bootloader        &trans        &trans        &trans         &kp K_MUTE  &kp PRINTSCREEN        &kp SYSREQ      &trans  &kp C_BRIGHTNESS_AUTO
+       &reset   &bootloader         &none         &none         &none         &kp K_MUTE  &kp PRINTSCREEN        &kp SYSREQ       &none  &kp C_BRIGHTNESS_AUTO
  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp K_VOLUME_UP   &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_NEXT   &kp C_BRIGHTNESS_INC
-   &bt BT_CLR    &bt BT_NXT    &bt BT_PRV        &trans        &trans  &kp K_VOLUME_DOWN           &trans            &trans      &trans   &kp C_BRIGHTNESS_DEC
+   &bt BT_CLR    &bt BT_NXT    &bt BT_PRV         &none         &none  &kp K_VOLUME_DOWN            &none             &none       &none   &kp C_BRIGHTNESS_DEC
                                                  &trans        &trans             &trans            &to 0
             >;
         };
 
         function_nav {
             bindings = <
-           &kp F1           &kp F2               &kp F3             &kp F4  &trans     &kp SCROLLLOCK              &kp HOME                  &kp UP              &kp END               &kp PAGE_UP
- &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LEFT_CONTROL F7  &hm LEFT_SHIFT F8  &trans    &kp K_SCROLL_UP  &hm RIGHT_SHIFT LEFT  &hm RIGHT_CONTROL DOWN  &hm RIGHT_ALT RIGHT  &hm RIGHT_META PAGE_DOWN
-           &kp F9          &kp F10              &kp F11            &kp F12  &trans  &kp K_SCROLL_DOWN              &kp LEFT                &kp DOWN               &kp UP                 &kp RIGHT
+           &kp F1           &kp F2               &kp F3             &kp F4   &none     &kp SCROLLLOCK              &kp HOME                  &kp UP              &kp END               &kp PAGE_UP
+ &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LEFT_CONTROL F7  &hm LEFT_SHIFT F8   &none    &kp K_SCROLL_UP  &hm RIGHT_SHIFT LEFT  &hm RIGHT_CONTROL DOWN  &hm RIGHT_ALT RIGHT  &hm RIGHT_META PAGE_DOWN
+           &kp F9          &kp F10              &kp F11            &kp F12   &none  &kp K_SCROLL_DOWN              &kp LEFT                &kp DOWN               &kp UP                 &kp RIGHT
                                                                      &to 3   &to 5             &trans                &trans
             >;
         };
