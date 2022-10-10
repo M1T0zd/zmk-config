@@ -109,19 +109,19 @@
 
         numbers {
             bindings = <
-  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3    &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6          &kp NUMBER_7             &kp NUMBER_8            &kp NUMBER_9          &kp NUMBER_0
- &kp LEFT_META  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT          &none     &kp MINUS  &hm RIGHT_SHIFT PLUS  &hm RIGHT_CONTROL SLASH  &hm RIGHT_ALT ASTERISK  &hm RIGHT_META EQUAL
-         &none         &none             &none           &none          &none         &none                 &none                    &none                   &none                 &none
-                                                         &none  &kp BACKSPACE     &kp SPACE                 &none
+            &kp NUMBER_1               &kp NUMBER_2                 &kp NUMBER_3                     &kp NUMBER_4       &kp NUMBER_5   &kp NUMBER_6                       &kp NUMBER_7                   &kp NUMBER_8                 &kp NUMBER_9                 &kp NUMBER_0
+ &hm LEFT_META LESS_THAN  &hm LEFT_ALT LEFT_BRACKET  &hm LEFT_CONTROL LEFT_BRACE  &hm LEFT_SHIFT LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp SEMICOLON  &hm RIGHT_SHIFT RIGHT_PARENTHESIS  &hm RIGHT_CONTROL RIGHT_BRACE  &hm RIGHT_ALT RIGHT_BRACKET  &hm RIGHT_META GREATER_THAN
+           &kp BACKSLASH                  &kp TILDE                    &kp EQUAL                   &kp UNDERSCORE          &kp GRAVE      &kp COLON                          &kp MINUS                       &kp PLUS                 &kp ASTERISK                    &kp CARET
+                                                                                                            &none      &kp BACKSPACE      &kp SPACE                              &none
             >;
         };
 
         symbols {
             bindings = <
-        &kp EXCLAMATION         &kp AT_SIGN              &kp DOLLAR                &kp AMPERSAND    &kp PERCENT      &kp CARET                          &kp HASH                  &kp ASTERISK                    &kp PLUS                 &kp EQUAL
- &hm LEFT_META QUESTION  &hm LEFT_ALT GRAVE  &hm LEFT_CONTROL MINUS  &hm LEFT_SHIFT SINGLE_QUOTE      &kp SLASH  &kp SEMICOLON  &hm RIGHT_SHIFT LEFT_PARENTHESIS  &hm RIGHT_CONTROL LEFT_BRACE  &hm RIGHT_ALT LEFT_BRACKET  &hm RIGHT_META LESS_THAN
-               &kp PIPE           &kp TILDE          &kp UNDERSCORE            &kp DOUBLE_QUOTES       &kp BSLH      &kp COLON             &kp RIGHT_PARENTHESIS               &kp RIGHT_BRACE           &kp RIGHT_BRACKET          &kp GREATER_THAN
-                                                                                           &none  &kp BACKSPACE      &kp SPACE                             &none
+                     &none                 &none                    &none                     &none          &none      &none                    &none                   &none               &none                    &none
+ &hm LEFT_META EXCLAMATION  &hm LEFT_ALT AT_SIGN  &hm LEFT_CONTROL DOLLAR  &hm LEFT_SHIFT AMPERSAND          &none      &none  &hm RIGHT_SHIFT PERCENT  &hm RIGHT_CONTROL HASH  &hm RIGHT_ALT PIPE  &hm RIGHT_META QUESTION
+                     &none                 &none                    &none                     &none          &none      &none                    &none                   &none               &none                    &none
+                                                                                              &none  &kp BACKSPACE  &kp SPACE                    &none
             >;
         };
 
