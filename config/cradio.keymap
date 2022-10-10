@@ -74,6 +74,27 @@
         };
     };
 
+    macros {
+        hyper: hyper {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_META &sk LEFT_ALT &sk LEFT_CONTROL &sk LEFT_SHIFT>;
+        };
+        meh: meh {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_ALT &sk LEFT_CONTROL &sk LEFT_SHIFT>;
+        };
+        ctrlshft: ctrlshft {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_CONTROL &sk LEFT_SHIFT>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -113,16 +134,16 @@
             >;
         };
 
-        function_nav {
+        NAV {
             bindings = <
-           &kp F1           &kp F2               &kp F3             &kp F4     &kp SCROLLLOCK    &kp PAGE_UP              &kp HOME                  &kp UP              &kp END           &kp CAPSLOCK
- &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LEFT_CONTROL F7  &hm LEFT_SHIFT F8    &kp K_SCROLL_UP  &kp PAGE_DOWN  &hm RIGHT_SHIFT LEFT  &hm RIGHT_CONTROL DOWN  &hm RIGHT_ALT RIGHT  &hm RIGHT_META DELETE
-           &kp F9          &kp F10              &kp F11            &kp F12  &kp K_SCROLL_DOWN         &kp N7              &kp LEFT                &kp DOWN               &kp UP              &kp RIGHT
-                                                                     &none              &none          &none                 &none
+         &none         &none             &none           &none     &kp SCROLLLOCK    &kp PAGE_UP              &kp HOME                  &kp UP              &kp END           &kp CAPSLOCK
+ &kp LEFT_META  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp K_SCROLL_UP  &kp PAGE_DOWN  &hm RIGHT_SHIFT LEFT  &hm RIGHT_CONTROL DOWN  &hm RIGHT_ALT RIGHT  &hm RIGHT_META DELETE
+         &none     &ctrlshft              &meh          &hyper  &kp K_SCROLL_DOWN         &kp N7              &kp LEFT                &kp DOWN               &kp UP              &kp RIGHT
+                                                         &none      &kp BACKSPACE      &kp SPACE                 &none
             >;
         };
 
-        One_hand {
+        ONE_HAND {
             bindings = <
        &kp ESCAPE   &kp Q   &kp W         &kp E      &kp R  &trans  &trans  &trans  &trans  &trans
    &kp LEFT_SHIFT   &kp A   &kp S         &kp D      &kp F  &trans  &trans  &trans  &trans  &trans
@@ -131,7 +152,7 @@
             >;
         };
 
-        Device {
+        DEVICE {
             bindings = <
  &bootloader  &reset   &none       &none  &bt BT_SEL 0  &bt BT_SEL 1       &none   &none  &reset  &bootloader
        &none   &none   &none  &bt BT_PRV  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_NXT   &none   &none        &none
