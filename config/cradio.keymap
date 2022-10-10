@@ -57,6 +57,21 @@
             bindings = <&mo 2>;
             key-positions = <30 33>;
         };
+
+        new_combo {
+            bindings = <&mo 6>;
+            key-positions = <30 31>;
+        };
+
+        new_combo {
+            bindings = <&mo 3>;
+            key-positions = <32 33>;
+        };
+
+        new_combo {
+            bindings = <&to 5>;
+            key-positions = <31 32>;
+        };
     };
 
     keymap {
@@ -91,10 +106,10 @@
 
         system {
             bindings = <
- &reset  &bootloader   &none   &none   &none         &kp K_MUTE  &kp PRINTSCREEN        &kp SYSREQ       &none  &kp C_BRIGHTNESS_AUTO
-  &none        &none   &none   &none   &none    &kp K_VOLUME_UP   &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_NEXT   &kp C_BRIGHTNESS_INC
-  &none        &none   &none   &none   &none  &kp K_VOLUME_DOWN            &none             &none       &none   &kp C_BRIGHTNESS_DEC
-                              &trans  &trans             &trans            &to 0
+           &kp F1           &kp F2               &kp F3              &kp F4   &none         &kp K_MUTE         &kp PRINTSCREEN                      &kp SYSREQ                 &none    &kp C_BRIGHTNESS_AUTO
+ &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LEFT_CONTROL F7  &hm RIGHT_SHIFT F8   &none    &kp K_VOLUME_UP  &hm RIGHT_SHIFT K_PREV  &hm RIGHT_CONTROL K_PLAY_PAUSE  &hm RIGHT_ALT K_NEXT  &hm RIGHT_META C_BRI_UP
+           &kp F9          &kp F10              &kp F11             &kp F12   &none  &kp K_VOLUME_DOWN                   &none                           &none                 &none     &kp C_BRIGHTNESS_DEC
+                                                                      &none   &none              &none                   &none
             >;
         };
 
@@ -103,16 +118,16 @@
            &kp F1           &kp F2               &kp F3             &kp F4     &kp SCROLLLOCK    &kp PAGE_UP              &kp HOME                  &kp UP              &kp END           &kp CAPSLOCK
  &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LEFT_CONTROL F7  &hm LEFT_SHIFT F8    &kp K_SCROLL_UP  &kp PAGE_DOWN  &hm RIGHT_SHIFT LEFT  &hm RIGHT_CONTROL DOWN  &hm RIGHT_ALT RIGHT  &hm RIGHT_META DELETE
            &kp F9          &kp F10              &kp F11            &kp F12  &kp K_SCROLL_DOWN         &kp N7              &kp LEFT                &kp DOWN               &kp UP              &kp RIGHT
-                                                                     &to 3              &to 5         &trans                &trans
+                                                                     &none              &none          &none                 &none
             >;
         };
 
-        One_hannd {
+        One_hand {
             bindings = <
        &kp ESCAPE   &kp Q   &kp W         &kp E      &kp R  &trans  &trans  &trans  &trans  &trans
    &kp LEFT_SHIFT   &kp A   &kp S         &kp D      &kp F  &trans  &trans  &trans  &trans  &trans
  &kp LEFT_CONTROL   &kp Z   &kp X         &kp C      &kp V  &trans  &trans  &trans  &trans  &trans
-                                   &kp LEFT_ALT  &kp SPACE  &trans   &to 0
+                                   &kp LEFT_ALT  &kp SPACE   &to 0   &to 0
             >;
         };
 
@@ -121,7 +136,7 @@
  &bootloader  &reset   &none       &none  &bt BT_SEL 0  &bt BT_SEL 1       &none   &none  &reset  &bootloader
        &none   &none   &none  &bt BT_PRV  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_NXT   &none   &none        &none
        &none   &none   &none       &none  &bt BT_SEL 4    &bt BT_CLR       &none   &none   &none        &none
-                                   &to 0         &none         &none       &to 0
+                                   &none         &none         &none       &none
             >;
         };
     };
