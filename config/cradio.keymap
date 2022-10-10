@@ -103,7 +103,7 @@
            &kp Q           &kp W               &kp E             &kp R          &kp T      &kp Y              &kp U                &kp I            &kp O                        &kp P
  &hm LEFT_META A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F          &kp G      &kp H  &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L  &hm RIGHT_META SINGLE_QUOTE
            &kp Z           &kp X               &kp C             &kp V          &kp B      &kp N              &kp M            &kp COMMA          &kp DOT                    &kp SLASH
-                                                                 &to 1  &kp BACKSPACE  &kp SPACE              &mo 4
+                                                                 &mo 1  &kp BACKSPACE  &kp SPACE              &mo 4
             >;
         };
 
