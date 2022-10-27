@@ -31,44 +31,44 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
+        esc {
             timeout-ms = <50>;
             key-positions = <1 2 3>;
             bindings = <&kp ESC>;
         };
 
-        combo_tab {
+        tab {
             timeout-ms = <50>;
             key-positions = <21 22 23>;
             bindings = <&kp TAB>;
         };
 
-        combo_del {
+        del {
             bindings = <&kp DEL>;
             key-positions = <8 7 6>;
         };
 
-        combo_enter {
+        enter {
             bindings = <&kp ENTER>;
             key-positions = <28 27 26>;
         };
 
-        hold_layer {
+        hold_layer_symbols {
             bindings = <&mo 2>;
             key-positions = <30 33>;
         };
 
-        new_combo {
+        hold_layer_device {
             bindings = <&mo 6>;
             key-positions = <30 31>;
         };
 
-        new_combo {
+        hold_layer_system {
             bindings = <&mo 3>;
             key-positions = <32 33>;
         };
 
-        new_combo {
+        toggle_layer_onehand {
             bindings = <&to 5>;
             key-positions = <31 32>;
         };
