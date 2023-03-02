@@ -126,7 +126,7 @@
 
         system {
             bindings = <
-          &kp F1           &kp F2               &kp F3              &kp F4  &none         &kp K_MUTE         &kp PRINTSCREEN                  &kp LA(SYSREQ)        &kp SCROLLLOCK    &kp C_BRIGHTNESS_AUTO
+          &kp F1           &kp F2               &kp F3              &kp F4  &none         &kp K_MUTE         &kp PRINTSCREEN                  &sk LA(SYSREQ)        &kp SCROLLLOCK    &kp C_BRIGHTNESS_AUTO
 &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LEFT_CONTROL F7  &hm RIGHT_SHIFT F8  &none    &kp K_VOLUME_UP  &hm RIGHT_SHIFT K_PREV  &hm RIGHT_CONTROL K_PLAY_PAUSE  &hm RIGHT_ALT K_NEXT  &hm RIGHT_META C_BRI_UP
           &kp F9          &kp F10              &kp F11             &kp F12  &none  &kp K_VOLUME_DOWN                   &none                           &none                 &none     &kp C_BRIGHTNESS_DEC
                                                                      &none  &none              &none                   &none
