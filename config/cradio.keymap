@@ -5,8 +5,8 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     behaviors {
@@ -17,9 +17,7 @@
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -71,12 +69,14 @@
             #binding-cells = <0>;
             bindings = <&sk LEFT_META &sk LEFT_ALT &sk LEFT_CONTROL &sk LEFT_SHIFT>;
         };
+
         meh: meh {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
             bindings = <&sk LEFT_ALT &sk LEFT_CONTROL &sk LEFT_SHIFT>;
         };
+
         ctrlshft: ctrlshft {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
@@ -90,73 +90,73 @@
 
         default {
             bindings = <
-          &kp Q           &kp W               &kp E             &kp R          &kp T      &kp Y              &kp U                &kp I            &kp O                        &kp P
-&hm LEFT_META A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F          &kp G      &kp H  &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L  &hm RIGHT_META SINGLE_QUOTE
-          &kp Z           &kp X               &kp C             &kp V          &kp B      &kp N              &kp M            &kp COMMA          &kp DOT                    &kp SLASH
-                                                                &mo 1  &kp BACKSPACE  &kp SPACE              &mo 2
+&kp Q            &kp W           &kp E               &kp R             &kp T          &kp Y      &kp U              &kp I                &kp O            &kp P
+&hm LEFT_META A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G          &kp H      &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L  &hm RIGHT_META SINGLE_QUOTE
+&kp Z            &kp X           &kp C               &kp V             &kp B          &kp N      &kp M              &kp COMMA            &kp DOT          &kp SLASH
+                                                     &mo 1             &kp BACKSPACE  &kp SPACE  &mo 2
             >;
         };
 
         sym_num {
             bindings = <
-             &kp NUMBER_1     &kp NUMBER_2             &kp NUMBER_3              &kp NUMBER_4   &kp NUMBER_5       &kp NUMBER_6             &kp NUMBER_7             &kp NUMBER_8        &kp NUMBER_9             &kp NUMBER_0
-&hm LEFT_META EXCLAMATION  &hm LEFT_ALT AT  &hm LEFT_CONTROL DOLLAR  &hm LEFT_SHIFT AMPERSAND  &kp SEMICOLON          &kp COLON  &hm RIGHT_SHIFT PERCENT  &hm RIGHT_CONTROL POUND  &hm RIGHT_ALT PIPE  &hm RIGHT_META QUESTION
-                &kp TILDE        &kp CARET                &kp EQUAL            &kp UNDERSCORE      &kp GRAVE  &kp DOUBLE_QUOTES                &kp MINUS                 &kp PLUS        &kp ASTERISK            &kp BACKSLASH
-                                                                                        &none  &kp BACKSPACE          &kp SPACE                    &mo 3
+&kp NUMBER_1               &kp NUMBER_2     &kp NUMBER_3             &kp NUMBER_4              &kp NUMBER_5   &kp NUMBER_6       &kp NUMBER_7             &kp NUMBER_8             &kp NUMBER_9        &kp NUMBER_0
+&hm LEFT_META EXCLAMATION  &hm LEFT_ALT AT  &hm LEFT_CONTROL DOLLAR  &hm LEFT_SHIFT AMPERSAND  &kp SEMICOLON  &kp COLON          &hm RIGHT_SHIFT PERCENT  &hm RIGHT_CONTROL POUND  &hm RIGHT_ALT PIPE  &hm RIGHT_META QUESTION
+&kp TILDE                  &kp CARET        &kp EQUAL                &kp UNDERSCORE            &kp GRAVE      &kp DOUBLE_QUOTES  &kp MINUS                &kp PLUS                 &kp ASTERISK        &kp BACKSLASH
+                                                                     &none                     &kp BACKSPACE  &kp SPACE          &mo 3
             >;
         };
 
         nav {
             bindings = <
-              &none               &none                   &none                 &none              &none    &kp PAGE_UP              &kp HOME                  &kp UP              &kp END           &kp CAPSLOCK
-&hm LEFT_META RG(C)  &hm LEFT_ALT RG(E)  &hm LEFT_CONTROL RG(T)  &hm LEFT_SHIFT RG(F)              &none  &kp PAGE_DOWN  &hm RIGHT_SHIFT LEFT  &hm RIGHT_CONTROL DOWN  &hm RIGHT_ALT RIGHT  &hm RIGHT_META DELETE
-              &none           &ctrlshft                    &meh                &hyper              &none          &none              &kp LEFT                &kp DOWN               &kp UP              &kp RIGHT
-                                                                                &mo 3  &kp LC(BACKSPACE)      &kp SPACE                 &none
+&none                &none               &none                   &none                 &none              &kp PAGE_UP    &kp HOME              &kp UP                  &kp END              &kp CAPSLOCK
+&hm LEFT_META RG(C)  &hm LEFT_ALT RG(E)  &hm LEFT_CONTROL RG(T)  &hm LEFT_SHIFT RG(F)  &none              &kp PAGE_DOWN  &hm RIGHT_SHIFT LEFT  &hm RIGHT_CONTROL DOWN  &hm RIGHT_ALT RIGHT  &hm RIGHT_META DELETE
+&none                &ctrlshft           &meh                    &hyper                &none              &none          &kp LEFT              &kp DOWN                &kp UP               &kp RIGHT
+                                                                 &mo 3                 &kp LC(BACKSPACE)  &kp SPACE      &none
             >;
         };
 
         symbols {
             bindings = <
-                  &none                      &none                        &none                            &none  &none  &none                              &none                          &none                        &none                        &none
+&none                    &none                      &none                        &none                            &none  &none  &none                              &none                          &none                        &none
 &hm LEFT_META LESS_THAN  &hm LEFT_ALT LEFT_BRACKET  &hm LEFT_CONTROL LEFT_BRACE  &hm LEFT_SHIFT LEFT_PARENTHESIS  &none  &none  &hm RIGHT_SHIFT RIGHT_PARENTHESIS  &hm RIGHT_CONTROL RIGHT_BRACE  &hm RIGHT_ALT RIGHT_BRACKET  &hm RIGHT_META GREATER_THAN
-                  &none                      &none                        &none                            &none  &none  &none                              &none                          &none                        &none                        &none
-                                                                                                           &none  &none  &none                              &none
+&none                    &none                      &none                        &none                            &none  &none  &none                              &none                          &none                        &none
+                                                                                 &none                            &none  &none  &none
             >;
         };
 
         system {
             bindings = <
-          &kp F1           &kp F2               &kp F3              &kp F4  &kp LA(SYSREQ)         &kp K_MUTE         &kp PRINTSCREEN                  &sk LA(SYSREQ)        &kp SCROLLLOCK    &kp C_BRIGHTNESS_AUTO
-&hm LEFT_META F5  &hm LEFT_ALT F6  &hm LEFT_CONTROL F7  &hm RIGHT_SHIFT F8           &kp F    &kp K_VOLUME_UP  &hm RIGHT_SHIFT K_PREV  &hm RIGHT_CONTROL K_PLAY_PAUSE  &hm RIGHT_ALT K_NEXT  &hm RIGHT_META C_BRI_UP
-          &kp F9          &kp F10              &kp F11             &kp F12           &none  &kp K_VOLUME_DOWN                   &none                           &none                 &none     &kp C_BRIGHTNESS_DEC
-                                                                     &none           &none              &none                   &none
+&kp F1            &kp F2           &kp F3               &kp F4              &kp LA(SYSREQ)  &kp K_MUTE         &kp PRINTSCREEN         &sk LA(SYSREQ)                  &kp SCROLLLOCK        &kp C_BRIGHTNESS_AUTO
+&hm LEFT_META F5  &hm LEFT_ALT F6  &hm LEFT_CONTROL F7  &hm RIGHT_SHIFT F8  &kp F           &kp K_VOLUME_UP    &hm RIGHT_SHIFT K_PREV  &hm RIGHT_CONTROL K_PLAY_PAUSE  &hm RIGHT_ALT K_NEXT  &hm RIGHT_META C_BRI_UP
+&kp F9            &kp F10          &kp F11              &kp F12             &none           &kp K_VOLUME_DOWN  &none                   &none                           &none                 &kp C_BRIGHTNESS_DEC
+                                                        &none               &none           &none              &none
             >;
         };
 
         device {
             bindings = <
-&bootloader  &reset  &none       &none  &bt BT_SEL 0  &bt BT_SEL 1       &none  &none  &reset  &bootloader
-      &none   &none  &none  &bt BT_PRV  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_NXT  &none   &none        &none
-      &none   &none  &none       &none  &bt BT_SEL 4    &bt BT_CLR       &none  &none   &none        &none
-                                 &none         &none         &none       &none
+&bootloader  &sys_reset  &none  &none       &bt BT_SEL 0  &bt BT_SEL 1  &none       &none  &sys_reset  &bootloader
+&none        &none       &none  &bt BT_PRV  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_NXT  &none  &none       &none
+&none        &none       &none  &none       &bt BT_SEL 4  &bt BT_CLR    &none       &none  &none       &none
+                                &none       &none         &none         &none
             >;
         };
 
         one_hand {
             bindings = <
-         &kp TAB  &kp Q  &kp W  &kp E      &kp R  &kp T  &kp Y  &kp U  &none  &none
-  &kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F  &kp H  &kp J  &kp K  &none  &none
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C      &kp V  &kp B  &kp N  &kp M  &none  &none
+&kp TAB           &kp Q  &kp W  &kp E  &kp R      &kp T  &kp Y  &kp U  &none  &none
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D  &kp F      &kp H  &kp J  &kp K  &none  &none
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C  &kp V      &kp B  &kp N  &kp M  &none  &none
                                 &mo 7  &kp SPACE  &to 0  &to 0
             >;
         };
 
         one_hand_2 {
             bindings = <
-&kp N1  &kp N2  &kp N3  &kp N4        &kp N5  &none  &none  &none  &none  &none
- &kp T   &kp G   &kp B   &kp H         &kp Y  &none  &none  &none  &none  &none
-&kp N6  &kp N7  &kp N8  &kp N9        &kp N0  &none  &none  &none  &none  &none
-                         &none  &kp LEFT_ALT  &to 0  &to 0
+&kp N1  &kp N2  &kp N3  &kp N4  &kp N5        &none  &none  &none  &none  &none
+&kp T   &kp G   &kp B   &kp H   &kp Y         &none  &none  &none  &none  &none
+&kp N6  &kp N7  &kp N8  &kp N9  &kp N0        &none  &none  &none  &none  &none
+                        &none   &kp LEFT_ALT  &to 0  &to 0
             >;
         };
     };
